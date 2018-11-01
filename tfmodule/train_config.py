@@ -6,7 +6,6 @@ class TrainConfig(object):
         # the number of step between evaluation
         self.train_input_size = 1
         self.train_data_size  = 0.8
-        self.test_data_size   = 0.8
 
         self.training_epochs  = 300
 

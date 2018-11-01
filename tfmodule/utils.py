@@ -9,7 +9,7 @@ def cal_mse(gt, pred):
     return rmse
 
 def cal_mae(gt, pred):
-    mae = 100/len(gt) * np.sum((gt - pred)/gt)
+    mae = np.mean(100/len(gt) * np.abs((gt - pred)/gt))
     return mae
 
 def show(gt, pred):
